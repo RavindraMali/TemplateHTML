@@ -1,0 +1,443 @@
+<html>
+<head>
+	<title>Home | Furniture Mall </title>
+	
+	
+	<!-- Css Files start -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/dropdown.css" />
+	<link rel="stylesheet" href="css/menu.css" />
+	<!-- css files end -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	<!--  Jquery Files -> start -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqueryscript.js" ></script>
+	<script type="text/javascript" src="js/jquery.cycle.js"></script>
+	<script type="text/javascript" >
+	
+		$(document).ready(function(){
+				$('#slider').cycle('fade');
+				$('.animated').show(2000);
+				
+		});
+	</script>
+
+	<!--  Jquery Files -> start -->
+</head>
+<body>
+
+<div class="row header_body" >
+
+	<div class="container animate">
+			<ul class="nav nav-pills span4 top_header"  >
+				<li><a href="index.html" style="color:black;"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="registration.html"><i class="fa fa-user"></i>Create Account</a></li>
+				<li><a  href="login.html"><i class="fa fa-key"></i>Login</a></li>
+				<li class="act" style="float:right;"><a href="aboutus.html">&nbsp;About Us</a></li>
+			</ul>
+	</div>
+	</div>
+<div class="container-fluid page_body">
+		<center>
+			
+			<a href="index.html"><img title="Furniture Decore Home" class="animated logo" style="display:none;"  src="img/web_logo.png" /></a>
+			<hr class="bordered" />
+
+		</center>
+
+	<!--  Category And Subcategory Menu-->
+	<nav>
+		<form method="post" action="search.html">
+		<div class="toggle">
+			<i class="fa fa-bars menu"></i>
+		</div>
+		<ul id="navbar">
+			<li class="act"><a href="index.html">Home</a></li>
+			<li><a href="category.html" class="category">BAR</a>
+					<!--<ul class="dropdown">-->
+						<!--<li><a href="">BAR CHAIR</a></li>-->
+						<!--<li><a href="">STAND</a></li>-->
+						<!--<li><a href="">WHISKEY TABLE</a></li>-->
+					<!--</ul>-->
+			</li>
+			<li><a href="category.html">DINING</a></li>
+			<li><a href="category.html">OFFICE</a></li>
+			<li class="act"><a href="contactus.html"><i class="fa fa-phone"></i>&nbsp;Contact Us</a></li>
+			<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;Cart</a></li>
+			<li id="searchli"> <input class="form-control" id="search" type="search" placeholder="Search"  /></li>
+		</ul>
+		</form>
+	</nav>
+<!--  End  -->
+
+
+	<!-- menu responsive
+<div class="container-fluid">
+	<div class="container">
+
+			<div class="nav-bar">
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a hrf="">web design<span class="arrow-down"></span></a>
+						<ul class="dropdown">
+							<li><a href="">HTML</a></li>
+							<li><a href="">css</a></li>
+							<li><a href="">javascript</a></li>
+						</ul>
+					</li>
+
+					<li><a hrf="">Digital marketing<span class="arrow-down"></span></a>
+						<ul class="dropdown">
+							<li><a href="">SEO</a></li>
+							<li><a href="">SMM</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">mobile app</a></li>
+					<li><a href="#">blog</a></li>
+					<li><a href="#">contactus</a></li>
+
+				</ul>
+
+			</div>
+
+
+	</div>
+</div>
+	<!--end-->
+
+	<hr />
+
+	<marquee id="heading"  class="offer" onmouseenter="stop()" onmouseleave="start()" ><i class="fa fa-gift"></i> Offer : From 2018-11-24 To  2018-11-27  Flat  2000 Off On Minimum shopping of 20000 On beds Category</marquee>
+			<div class="container">
+				
+					<div class="img_slider animated"  style="display:none;" id="slider" >
+						<img src="slider/1.jpeg">
+						<img src="slider/2.jpeg">
+						<img src="slider/3.jpeg">
+						<img src="slider/4.jpeg">
+
+					</div>
+
+			</div>
+			<hr />
+</div>
+
+<div class="products-list header_body">
+	<div class="container" style="text-align: center;">
+
+		<h3><span style="color:orange;">FEATURED</span>&nbsp;PRODUCTS</h3>
+		<div class="row">
+
+			<div class="col-sm-3 product-box">
+				<a href="productdetails.html">
+					<div class="image-box" >
+						<img src="products/product3.jpg" />
+					</div>
+				</a>
+						<a href="productdetails.html" title="EROS ENGINEERED WOOD OFFICE TABLE">
+						<label for="product-name">
+							Eros<b>..</b>
+						</label>
+						<br/>
+						<p><i class="fa fa-inr"></i>9500</p>
+						</a>
+						<p title="5 Star Product" style="color:orangered;">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<!--<i class="fa fa-star"></i>-->
+							<i class="fa fa-star"></i>
+						</p>
+					<center>
+						<button type="button" class="btn btn-block">Add Cart</button>
+					</center>
+
+				</div>
+
+			<div class="col-sm-3 product-box">
+				<a href="productdetails1.html">
+				<div class="image-box" >
+					<img src="products/product2.jpg" />
+				</div>
+				</a>
+				<a href="productdetails1.html" title="WOODFABER SHEESHAM WOOD 6 SEATER DINING SET">
+					<label for="product-name">
+						WOODFABER<b>..</b>
+					</label>
+					<br/>
+					<p><i class="fa fa-inr"></i>15500</p>
+				</a>
+				<p title="5 Star Product" style="color:orangered;">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<!--<i class="fa fa-star"></i>-->
+					<!--<i class="fa fa-star"></i>-->
+					<i class="fa fa-star"></i>
+				</p>
+				<center>
+					<button type="button" class="btn btn-block">Add Cart</button>
+				</center>
+			</div>
+
+			<div class="col-sm-3 product-box">
+				<a href="productdetails2.html">
+					<div class="image-box" >
+						<img src="products/product1.jpg" />
+					</div>
+				</a>
+				<a href="productdetails2.html" title="DELITE KOM URBAN SINGLE BED WITHOUT STORAGE COLOR - ACACIA DARK">
+					<label for="product-name">
+						Queen Size Hydr<b>..</b>
+					</label>
+					<br/>
+					<p><i class="fa fa-inr"></i>18500</p>
+				</a>
+				<p title="5 Star Product" style="color:orangered;">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</p>
+				<center>
+					<button type="button" class="btn btn-block">Add Cart</button>
+				</center>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!--end products	-->
+
+<!--start small products 	-->
+<div class="container-fluid">
+<center>
+	<h3><span style="color:orange;">LATEST</span>&nbsp;PRODUCTS</h3>
+</center>
+	<div class="row">
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s6.jpg" />
+			</div>
+			<a href="#productdetails.html" title="DESI KARIGAR NATURAL WOODEN BAR">
+				<label for="product-name">
+					DESI<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>1799</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s2.jpg" />
+			</div>
+			<a href="#productdetails.html" title="DINING CHAIR WITH SOLID BACK IN WENGE FINISH">
+				<label for="product-name">
+					Dining Chair<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>4212</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s3.jpg" />
+			</div>
+			<a href="#productdetails.html" title="ARRA CLASSIC BAR WALL UNIT">
+				<label for="product-name">
+					Arra<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>5514</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s4.jpg" />
+			</div>
+			<a href="#productdetails.html" title="KINGS-AMARJYOTI-01-COMBO BAR CHAIR">
+				<label for="product-name">
+					Kings<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>7999</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s5.jpg" />
+			</div>
+			<a href="#productdetails.html" title="SET OF 2 METAL BAR STOOL">
+				<label for="product-name">
+					Set Of<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>7252</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s1.jpg" />
+			</div>
+			<a href="#productdetails.html" title="ANGEL'S SOLID SHEESHAM WOOD OPEN SPACE SAVER BOOKSHELF (HONEY)">
+				<label for="product-name">
+					ANGEL'S<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>9450</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+	</div>
+</div>
+
+
+	<!--end small products-->
+
+<!--start small products 	-->
+<div class="container-fluid">
+	<center>
+		<h3><span style="color:orange;">OUR</span>&nbsp;BEST</h3>
+	</center>
+	<div class="row marq">
+		<div class="col-sm-12">
+			<marquee direction="left">
+				<img src="products/p1.jpg" />
+				<img src="products/p2.jpg" />
+				<img src="products/p3.jpg" />
+				<img src="products/p4.jpg" />
+				<img src="products/p5.jpg" />
+				<img src="products/p6.jpg" />
+
+
+				<!--<div class="col-sm-2">-->
+					<!--<img src="products/p1.jpg" />-->
+				<!--</div>-->
+				<!--<div class="col-sm-2">-->
+					<!--<img src="products/p2.jpg" />-->
+				<!--</div>-->
+				<!--<div class="col-sm-2">-->
+					<!--<img src="products/p3.jpg" />-->
+				<!--</div>-->
+				<!--<div class="col-sm-2">-->
+					<!--<img src="products/p4.jpg" />-->
+				<!--</div>-->
+				<!--<div class="col-sm-2">-->
+					<!--<img src="products/p5.jpg" />-->
+				<!--</div>-->
+			</marquee>
+		</div>
+	</div>
+	<br />
+</div>
+
+
+<!--end small products-->
+
+
+<div  class="footer-link header_body links">
+<div class="container" >
+		<div class="row" >
+			<div class="col-sm-4" >
+				<h3 style="color:gray;"><i class="fa fa-info"></i>&nbsp;Information</h3>
+				<ol type="i">
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Company Turms & Conditions</a></li>
+				
+				</ol>
+			</div>
+			<div class="col-sm-4" >
+				<h3 style="color:gray;"><i class="fa fa-comment"></i>&nbsp;CUSTOMER SERVICE</h3>
+				<ol type="i">
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="">Delivery</a></li>
+				</ol>
+			</div>
+			<div class="col-sm-4" >
+				<h3 style="color:gray;"><i class="fa fa-unlock-alt"></i>&nbsp;Account</h3>
+				<ol type="i">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="">Logout</a></li>
+				</ol>
+			</div>
+			
+		</div>
+</div>
+</div>
+	<!-- top scroll button strt -->
+	<div class="up"><i class="fa fa-angle-double-up"></i></div>
+	<!-- top scroll button end  -->
+</body>
+</html>

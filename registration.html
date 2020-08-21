@@ -1,0 +1,135 @@
+<html>
+<head>
+	<title>Registration | Furniture Mall </title>
+	<!-- Css Files start -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- css files end -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	<!--  Jquery Files -> start -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqueryscript.js" ></script>
+	<!--  Jquery Files -> start -->
+
+</head>
+<body>
+<div class="row header_body" >
+
+	<div class="container">
+	<ul class="nav nav-pills span6  top_header animate">
+		<li>
+			<a href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a>
+		</li>
+		<li><a href="registration.html" style="color:black;"><i class="fa fa-user"></i>&nbsp;Create Account</a></li>
+		<li><a  href="login.html"><i class="fa fa-key"></i>&nbsp;Login</a></li>
+		<!--<li class="act"  style="float:right;"><a href="aboutus.html">About Us</a></li>-->
+		<!--<li class="act"  style="float:right;"><a href="contactus.html">ContactUs</a></li>-->
+	</ul>
+	</div>
+</div>
+<div class="container-fluid page_body">
+		<center>
+			<h1 id="heading"  style="display:none;"	 class="margin-bottom logo animate" >R<span style="color:yellow;">EGISTRATION</span></h1>
+			<!---<img style="margin:auto;padding:auto;position:relative;" src="img/header_logo.png" />-->
+		</center>
+	<div class="container animate">
+		<form method="post" name="register_form" onsubmit="return confirm('Your Successfully Registered. Please Log-In First');" action="login.html">
+				<legend style="color:lightgray;">Personal Details</legend>
+			<div class="row">
+				<div class="col-sm-4 register_block">
+						<label for="f_name">First Name</label>
+						<input name="Fname" id="fname" class="form-control 	ctrl" type="text" placeholder=" First Name" ><br>
+						<label id="er_fname" style="color:red;font-family:times new roman;"></label></br>
+						<label for="l_name">Last Name</label>
+						<input name="Lname" id="lname" class="form-control 	ctrl" type="text" placeholder=" Last Name" ><br>
+						<label id="er_lname" style="color:red;font-family:times new roman;"></label></br>
+				</div>
+				<div class="col-sm-4 register_block">	
+						<label for="email">Email</label>
+						<input name="Email" id="email" class="form-control 	ctrl" type="text" placeholder=" Email Address" ><br>
+						<label id="er_email" style="color:red;font-family:times new roman;"></label></br>
+						<label for="contact">Contact</label>
+						<input name="Contact" id="contact" class="form-control 	ctrl" type="text" placeholder="Contact" ><br>
+						<label id="er_contact" style="color:red;font-family:times new roman;"></label></br>
+				</div>	
+			</div>
+			<div class="row">
+				<div style="width:279px;" class="col-sm-4 register_block">
+						<label for="gender">Gender</label><br>
+						<input type="radio"   name="Gender" checked value="Male">Male
+						<input type="radio"  name="Gender" value="Female">Female<br>
+				</div>
+				<div class="col-sm-4 register_block">	
+						<label for="dob">Date Of Birth</label>
+						<input type="date" name="DOB" class="form-control 	ctrl"  placeholder=" City"><br>
+						
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-sm-4 register_block">
+						<label for="address">Address</label>
+						<textarea name="Address" id="address"	rows="5" class="form-control 	ctrl"  placeholder=" Address" ></textarea><br>
+						<label id="er_address" style="color:red;font-family:times new roman;"></label></br>
+				</div>
+				<div class="col-sm-4 register_block">	
+						<label for="city">City</label>
+						<input name="City" id="city" class="form-control 	ctrl" type="text" placeholder=" City" ><br>
+						<label id="er_city" style="color:red;font-family:times new roman;"></label></br>
+						<label for="pincode">Pin-Code</label>
+						<input name="Pincode" id="pincode" class="form-control 	ctrl" type="text" placeholder=" Pin-Code" ><br>
+						<label id="er_pincode" style="color:red;font-family:times new roman;"></label></br>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="cols-sm-4 register_block">
+					<input class="form-control btn btn-primary ctrl" style="margin-left:20px;" onclick="return register_validate();" type="submit" >
+						<input class="form-control btn btn-warning ctrl" style="margin-left:20px;" type="button"  onclick="return empty();" value="reset">
+				</div>
+				
+			</div>
+		</form>
+	</div>
+</div>
+<div  class="footer-link header_body links">
+<div class="container animate">
+	<div class="row ">
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-info"></i>&nbsp;Information</h3>
+			<ol type="i">
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Company Turms & Conditions</a></li>
+				
+			</ol>
+		</div>
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-comment"></i>&nbsp;CUSTOMER SERVICE</h3>
+			<ol type="i">
+				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="">Delivery</a></li>
+				
+			</ol>
+		</div>
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-unlock-alt"></i>&nbsp;Account</h3>
+			<ol type="i">
+				<li><a href="login.html">Login</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="">Logout</a></li>
+			</ol>
+		</div>
+			
+	</div>
+	</div>
+</div>
+</div>
+
+<!-- top scroll button strt -->
+<div class="up"><i class="fa fa-angle-double-up"></i></div>
+<!-- top scroll button end  -->
+</body>
+</html>

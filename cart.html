@@ -1,0 +1,346 @@
+<html>
+<head>
+	<title>Cart | Furniture Mall </title>
+	
+	
+	<!-- Css Files start -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/dropdown.css" />
+	<link rel="stylesheet" href="css/menu.css" />
+	<!-- css files end -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	<!--  Jquery Files -> start -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqueryscript.js" ></script>
+	<script type="text/javascript" src="js/jquery.cycle.js"></script>
+	<script type="text/javascript" >
+	
+		$(document).ready(function(){
+				$('#slider').cycle('fade');
+				$('.animated').show(2000);
+
+				$('.remove').click(function(){
+					$('#p_remove').hide(100);
+				});
+
+			$('.close').click(function(){
+				$('#p_remove').hide(100);
+				$('#p_remove1').hide(100);
+			});
+		});
+	</script>
+
+	<!--  Jquery Files -> start -->
+</head>
+<body>
+
+<div class="row header_body" >
+
+	<div class="container animate">
+		<ul class="nav nav-pills span4 top_header"  >
+			<li><a href="index.html" style="color:black;"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="registration.html"><i class="fa fa-user"></i>Create Account</a></li>
+			<li><a  href="login.html"><i class="fa fa-key"></i>Login</a></li>
+			<li class="act" style="float:right;"><a href="aboutus.html">&nbsp;About Us</a></li>
+		</ul>
+	</div>
+	<div class="container-fluid page_body">
+		<center>
+
+			<a href="index.html"><img title="Furniture Decore Home" class="animated logo" style="display:none;"  src="img/web_logo.png" /></a>
+			<hr class="bordered" />
+
+		</center>
+
+		<!--  Category And Subcategory Menu-->
+		<nav>
+			<form method="post" action="search.html">
+				<div class="toggle">
+					<i class="fa fa-bars menu"></i>
+				</div>
+				<ul id="navbar">
+					<li class="act"><a href="index.html">Home</a></li>
+					<li><a href="category.html" class="category">BAR</a>
+						<!--<ul class="dropdown">-->
+						<!--<li><a href="">BAR CHAIR</a></li>-->
+						<!--<li><a href="">STAND</a></li>-->
+						<!--<li><a href="">WHISKEY TABLE</a></li>-->
+						<!--</ul>-->
+					</li>
+					<li><a href="category.html">DINING</a></li>
+					<li><a href="category.html">OFFICE</a></li>
+					<li class="act"><a href="contactus.html"><i class="fa fa-phone"></i>&nbsp;Contact Us</a></li>
+					<li id="searchli"> <input class="form-control" id="search" type="search" placeholder="Search"  /></li>
+				</ul>
+			</form>
+		</nav>
+		<!--  End  -->
+
+
+		<hr />
+	</div>
+
+</div>
+<!--end products	-->
+<div class="container">
+	<center>
+		<h3><span style="color:orange;">USER </span>&nbsp;CART</h3>
+		<hr/>
+	</center>
+
+
+
+	<div class="alert alert-info">
+		<button type="button" class="close" data-dismiss="alert">*</button>
+
+		<strong>Warning</strong> Empty cart</div>
+
+	<strong>Total Items In Cart :</strong></div>
+<div class="container">
+<!-- Cart -->
+<table class="table table-hover">
+	<thead>
+	<tr>
+		<th>Image  </th>
+		<th class="p-name"> Product Name</th>
+		<th>Qty</th>
+		<th>Price</th>
+		<th>Total</th>
+		<th>Action</th>
+	</tr>
+	</thead>
+	<tbody>
+
+<tr id="p_remove1" title="View Product Details">
+
+		<td class="thumb-cart">
+				<a href="productdetails.html">
+						<img  src="products/p2.jpg" style="width:100px;height:100px;" alt="Product" />
+				</a>
+		</td>
+		<td class="p-name"><h5>DESI KARIGAR NATURAL WOODEN BAR</h5></td>
+		<td>2</td>
+		<td><i class="fa fa-inr"></i>1799</td>
+		<td><strong><i class="fa fa-inr"></i> 3598</strong></td>
+		<td>
+			<h3> <a title="Want To Remove." style="color:red;"  ><i style="color:red;" class="fa fa-trash-o"></i></a></h3>
+		</td>
+	</tr>
+	<tr id="p_remove" title="View Product Details">
+		<td class="thumb-cart">
+			<a href="productdetails1.html">
+			<img src="products/product2.jpg" style="width:100px;height:100px;" alt="Product" />
+			</a>
+		</td>
+		<td class="p-name"><h5>EROS ENGINEERED WOOD OFFICE TABLE</h5></td>
+		<td>1</td>
+		<td><i class="fa fa-inr"></i>9000</td>
+		<td><strong><i class="fa fa-inr"></i> 9000</strong></td>
+		<td>
+			<h3 class="remove"> <a title="Want To Remove." style="color:red;"  ><i style="color:red;" class="fa fa-trash-o"></i></a></h3>
+		</td>
+	</tr>
+
+	</tbody>
+</table>
+	<input type="button" class="btn btn-warning" style="float:right;" value="Checkout">
+
+		<h3 style="float:right;">Total &nbsp;<i class="fa fa-inr"></i>12598</h3>
+	<br>
+</div>
+</div>
+<!--start small products 	-->
+<div class="container">
+
+<center>
+	<h3><span style="color:orange;">COMING SOON</span>&nbsp;PRODUCTS</h3>
+</center>
+	<div class="row">
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s6.jpg" />
+			</div>
+			<a href="#productdetails.html" title="DESI KARIGAR NATURAL WOODEN BAR">
+				<label for="product-name">
+					DESI<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>1799</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s2.jpg" />
+			</div>
+			<a href="#productdetails.html" title="DINING CHAIR WITH SOLID BACK IN WENGE FINISH">
+				<label for="product-name">
+					Dining Chair<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>4212</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s3.jpg" />
+			</div>
+			<a href="#productdetails.html" title="ARRA CLASSIC BAR WALL UNIT">
+				<label for="product-name">
+					Arra<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>5514</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s4.jpg" />
+			</div>
+			<a href="#productdetails.html" title="KINGS-AMARJYOTI-01-COMBO BAR CHAIR">
+				<label for="product-name">
+					Kings<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>7999</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s5.jpg" />
+			</div>
+			<a href="#productdetails.html" title="SET OF 2 METAL BAR STOOL">
+				<label for="product-name">
+					Set Of<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>7252</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+		<div class="col-sm-2 product-small-box">
+			<div class="small-image-box" >
+				<img src="products/s1.jpg" />
+			</div>
+			<a href="#productdetails.html" title="ANGEL'S SOLID SHEESHAM WOOD OPEN SPACE SAVER BOOKSHELF (HONEY)">
+				<label for="product-name">
+					ANGEL'S<b>..</b>
+				</label>
+				<br/>
+				<p><i class="fa fa-inr"></i>9450</p>
+			</a>
+			<p title="5 Star Product" style="color:orangered;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</p>
+			<center>
+				<button type="button" class="btn btn-block">Add Cart</button>
+			</center>
+		</div>
+
+	</div>
+</div>
+
+
+	<!--end small products-->
+
+<!--start small products 	-->
+
+<!--end small products-->
+
+
+<div  class="footer-link header_body links">
+<div class="container" >
+		<div class="row" >
+			<div class="col-sm-4" >
+				<h3 style="color:gray;"><i class="fa fa-info"></i>&nbsp;Information</h3>
+				<ol type="i">
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Company Turms & Conditions</a></li>
+				
+				</ol>
+			</div>
+			<div class="col-sm-4" >
+				<h3 style="color:gray;"><i class="fa fa-comment"></i>&nbsp;CUSTOMER SERVICE</h3>
+				<ol type="i">
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="">Delivery</a></li>
+				</ol>
+			</div>
+			<div class="col-sm-4" >
+				<h3 style="color:gray;"><i class="fa fa-unlock-alt"></i>&nbsp;Account</h3>
+				<ol type="i">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="">Logout</a></li>
+				</ol>
+			</div>
+			
+		</div>
+</div>
+</div>
+	<!-- top scroll button strt -->
+	<div class="up"><i class="fa fa-angle-double-up"></i></div>
+	<!-- top scroll button end  -->
+</body>
+</html>

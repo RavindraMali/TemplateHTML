@@ -1,0 +1,73 @@
+
+
+
+*{
+	margin:0;
+	padding:0;
+	text-transform: capitalize;
+}
+a{  text-decoration: none;}
+.container{
+	max-width:1200px;
+	margin:0 auto;
+	width:100%;
+}
+.nav-bar{
+	display:block;
+	margin-bottom: 15px ;
+	background: #F2F2F2 url('../img/bg-line-vert.png') repeat;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.3);
+	border-radius: 3px;
+}
+.nav-bar ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.nav-bar li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	color:gray;
+}
+.nav-bar li a{
+	padding: 15px 20px;
+	display: inline-block;
+	position: relative;
+	font-weight: 400;
+	color:black;
+	font-size:14px;
+	outline: 0;
+}
+.nav-bar li:hover ul.dropdown{display:block; }
+.nav-bar li ul.dropdown{
+	position: absolute;
+	display: none;
+	width: 200px;
+	background: #F2F2F2 url('../img/bg-line-vert.png') repeat;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+	padding-top: 0;
+}
+.nav-bar li ul.dropdown li{
+	list-style-type:none;
+	display: block;
+
+}
+.nav-bar li ul.dropdown li a{
+	padding:15px 20px;
+	font-size:15px;
+	color:black;
+	display: block;
+	font-weight: 400;
+}
+.nav-bar li ul.dropdown li:last-child a {
+	border-bottom: none;
+}
+.nav-bar li:hover a{
+	background: gray;
+	color:black !important;
+}

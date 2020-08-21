@@ -1,0 +1,110 @@
+<html>
+<head>
+	<title>Login | Furniture Mall </title>
+	
+	<!-- Css Files start -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- css files end -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	<!--  Jquery Files -> start -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqueryscript.js" ></script>
+	<!--  Jquery Files -> start -->
+	
+	</head>
+<body>
+<div class="row header_body" >
+	<div class="container">
+
+	<ul class="nav nav-pills  span6 top_header animate">
+		<li>
+			<a href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a>
+		</li>
+		<li><a href="registration.html"><i class="fa fa-user"></i>&nbsp;Create Account</a></li>
+		<li><a style="color:black;" href="login.html"><i class="fa fa-key"></i>&nbsp;Login</a></li>
+		<!--<li class="act"  style="float:right;"><a href="aboutus.html">About Us</a></li>-->
+		<!--<li class="act"  style="float:right;"><a href="contactus.html">ContactUs</a></li>-->
+	</ul>
+	</div>
+</div>
+<div class="container-fluid page_body">
+		<center>
+			<h1 id="heading" class="margin-bottom animate" >LOG<span style="color:yellow;">&nbsp;IN</span></h1>
+			<!---<img style="margin:auto;padding:auto;position:relative;" src="img/header_logo.png" />-->
+		</center>
+			<div class="container page_content">
+		
+			<center>
+			
+				<div class="cols-sm-4 login_block animate">
+					<img src="img/web_logo.png" width="100px" height="100px" /><br>
+					<caption >Welcome , to Online Furniture Portal</caption>
+					
+					<form name="login_form" onsubmit="return confirm('Your Successfully Loged in');"  action="index.html">
+					<br>	
+						<span></span><input  class="form-control ctrl" name="Username" type="text" placeholder="Enter Username" >
+						<br>
+						<label id="username" style="color:red;font-family:times new roman;"></label></br>
+						<input name="Password" type="password" class="form-control ctrl" placeholder="Enter Password" >
+						<br>
+						<label id="password" style="color:red;font-family:times new roman;"></label></br>
+						<div class="row">
+						<input type="submit"   onclick="return login_validate();" class="btn btn-primary" value="LOGIN" />
+						<button type="button" class="btn btn-warning" onclick="return clear();" value="CANCEL" >CANCEL</button>
+						</div>
+					</form>
+					<div class="cols-sm-4 links" >
+						<a href="registration.html">WANT NEW ACCOUNT ?</a> 
+						<hr class="bordered" >
+						<a href="#">FORGET PASSWORD?</a>
+					</div>
+				</div>
+		
+			</center>
+	
+	</div>
+</div>
+<br>
+<div  class="footer-link header_body links">
+<div class="container animate">
+	<div class="row ">
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-info"></i>&nbsp;Information</h3>
+			<ol type="i">
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Company Turms & Conditions</a></li>
+				
+			</ol>
+		</div>
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-comment"></i>&nbsp;CUSTOMER SERVICE</h3>
+			<ol type="i">
+				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="">Delivery</a></li>
+				
+			</ol>
+		</div>
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-unlock-alt"></i>&nbsp;Account</h3>
+			<ol type="i">
+				<li><a href="login.html">Login</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="">Logout</a></li>
+			</ol>
+		</div>
+			
+	</div>
+	</div>
+</div>
+</div>
+<!-- top scroll button strt -->
+<div class="up"><i class="fa fa-angle-double-up"></i></div>
+<!-- top scroll button end  -->
+</body>
+</html>

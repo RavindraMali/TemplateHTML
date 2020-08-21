@@ -1,0 +1,131 @@
+<html>
+<head>
+	<title>ContactUs | Furniture Mall </title>
+	
+	
+	<!-- Css Files start -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- css files end -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	<!--  Jquery Files -> start -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqueryscript.js" ></script>
+	<!--  Jquery Files -> start -->
+
+</head>
+<body>
+<div class="row header_body" >
+	<div class="container">
+
+	<ul class="nav nav-pills  top_header">
+		<li>
+			<a href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a>
+		</li>
+		<li><a href="registration.html" ><i class="fa fa-user"></i>&nbsp;Create Account</a></li>
+		<li><a  href="login.html"><i class="fa fa-key"></i>&nbsp;Login</a></li>
+		<li class="act"  style="float:right;"><a href="aboutus.html">About Us</a></li>
+		<!--<li class="act" style="float:right;"><a href="contactus.html" style="color:black;">Contact Us</a></li>-->
+	</ul>
+	</div>
+</div>
+<div class="container-fluid page_body">
+		<center>
+			
+			<a href="index.html"><img class="animate logo"  title="Furniture Decore Home"  src="img/web_logo.png" /></a>
+		<hr class="bordered" />
+
+		</center>
+		<center>
+			<h3 id="heading" class="margin-bottom" >CONTACT<span style="color:green;">US</span></h3>
+			<!---<img style="margin:auto;padding:auto;position:relative;" src="img/header_logo.png" />-->
+		</center>
+	<div class="container">
+		<form method="post" name="register_form" onsubmit="return confirm('Your Successfully Registered. Please Log-In First');" action="login.html">
+				<legend style="color:lightgray;"><a id="home" href="index.html">Home</a>/<strong>ContactUs</strong></legend>
+			<div class="row">
+				<div style="color:gray;" class="col-sm-6">
+				
+				<h4>HEADQUARTER</h4>
+				<pre>
+				Bharat Furniture Mart.
+Home Furnishing At. Bharat Furnishing Mart Surat (gujarat).
+					
+				</pre>
+					<a id="hide" href="#er_lname"><h3>Click Here To Give Feedback.</h3></a>
+				<br>
+				<hr/>
+				<label>Help Line</label>
+				<p style="color:lightgreen;">Helpbharatmart@furniture.com</p>
+				<label>Contact&nbsp;<i class="fa fa-phone"></i></label>
+				<p style="color:blue;">1800045767</p>
+				</div>
+				<div  class="col-sm-3 h">
+						
+						<input name="Fname" id="fname" class="form-control 	ctrl" type="text" placeholder=" First Name" ><br>
+						<label id="er_fname" style="color:red;font-family:times new roman;"></label></br>
+						
+						<input name="Email" id="email" class="form-control 	ctrl" type="text" placeholder=" Email Address" ><br>
+						<label id="er_email" style="color:red;font-family:times new roman;"></label></br>
+						<textarea rows="4" class="form-control 	ctrl" placeholder="Enter Your Feedback" ></textarea>
+				</div>	
+				<div  class="col-sm-3 h">
+								
+						<input name="Lname" id="lname" class="form-control 	ctrl" type="text" placeholder=" Last Name" ><br>
+						<label id="er_lname" style="color:red;font-family:times new roman;"></label></br>
+						
+						<input name="Contact" id="contact" class="form-control 	ctrl" type="text" placeholder=" Contact" ><br>
+						<label id="er_contact" style="color:red;font-family:times new roman;"></label></br>
+						<input class="form-control btn btn-primary ctrl" style="width:120px;" onclick="return register_validate();" type="submit" >
+					<input class="form-control btn btn-warning ctrl" style="width:120px;"  type="button"  onclick="return empty();" value="reset">
+				</div>
+			</div>
+
+
+		</form>
+	</div>
+
+</div  >
+
+<!-- top scroll button strt -->
+<div class="up"><i class="fa fa-angle-double-up"></i></div>
+<!-- top scroll button end  -->
+<div  class="footer-link header_body links">
+<div class="container ">
+	<div class="row ">
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-info"></i>&nbsp;Information</h3>
+			<ol type="i">
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Company Turms & Conditions</a></li>
+				
+			</ol>
+		</div>
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-comment"></i>&nbsp;CUSTOMER SERVICE</h3>
+			<ol type="i">
+				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="">Delivery</a></li>
+				
+			</ol>
+		</div>
+		<div class="col-sm-4" >
+			<h3 style="color:gray;"><i class="fa fa-unlock-alt"></i>&nbsp;Account</h3>
+			<ol type="i">
+				<li><a href="login.html">Login</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="">Logout</a></li>
+			</ol>
+		</div>
+			
+	</div>
+	</div>
+</div>
+
+</body>
+</html>
